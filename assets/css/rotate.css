@@ -1,0 +1,63 @@
+body {
+  font-family: Cambria;
+}
+
+.container {
+  margin: 0 1rem;
+  padding: 5px;
+  text-align: center;
+}
+
+.box {
+  position: relative;
+  margin: 2rem auto;
+  border: 1px solid slateblue;
+  background-color: mediumseagreen;
+  border-radius: 10px;
+  padding: 5rem;
+}
+
+.man {
+  width: 200px;
+}
+
+.football {
+  position: absolute;
+  bottom: 25%;
+  width: 30px;
+  animation: 1s rotate linear infinite;
+  border-radius: 50%;
+}
+
+.my-style {
+  position: absolute;
+  top: 1.1rem;
+  animation: 1s rotate linear infinite;
+}
+
+button {
+  position: relative;
+  border: 2px solid slateblue;
+  border-radius: 10px;
+  padding: 10px;
+  color: slateblue;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(360deg);
+  }
+}
+
+@media (max-width: 540px) {
+  .man {
+    width: 150px;
+  }
+  .football {
+    width: 20px;
+    bottom: 30%;
+  }
+}
